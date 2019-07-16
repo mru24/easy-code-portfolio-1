@@ -1,0 +1,3 @@
+.bg-black{background:black}*{margin:0;padding:0;box-sizing:border-box}body{background:black}body .wrapper{background:white;max-width:1900px;min-height:100vh;margin:auto;overflow-x:hidden}body .wrapper .landing nav{position:relative;z-index:999}body .wrapper .landing .landing-banner{margin-top:-60px;background:grey;min-height:100vh;position:relative}body .wrapper .landing .landing-banner .landing-slider{position:absolute;top:0;left:0}body .wrapper .landing .landing-banner .landing-slider .landing-slide img{width:100%;height:100vh}body .wrapper .landing .landing-banner .landing-title{position:absolute;top:50%;left:15%;transform:translateY(-50%)}
+
+/*# sourceMappingURL=style.min.css.map */
