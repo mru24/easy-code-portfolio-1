@@ -19,7 +19,7 @@
 <body>
   <div class="wrapper">
     <div class="landing">
-      <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+      <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
         <a class="navbar-brand" href="#">Hotel</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -28,10 +28,10 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#about">About Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Gallery</a>
@@ -43,30 +43,134 @@
         </div>
       </nav>
 
-      <div class="landing-banner">
+      <div class="landing-banner" id="top">
         <div class="landing-slider">
           <div class="landing-slide">
             <img src="img/1.jpg" alt="">
-          </div>          
+          </div>
         </div>
-        <div class="landing-title">
+        <div class="landing-title text-light">
           <p class="lead">Welcome to our hotel</p>
-          <h3>Have a good night</h3>
+          <h2 class="display-3">Have a good night</h2>
         </div>
+
+        <!-- ARROW DOWN BUTTON -->
+        <a href="#intro" class="arrow-down"></a>
       </div>
     </div>
 
-    <div id="intro">
+    <section id="intro">
       <div class="row bg-black text-light p-5">
         <div class="col-md-7">
-          <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, rerum.</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, rerum.</p>
           <h3>Welcome to our hotel</h3>
         </div>
         <div class="col-md-5 text-center p-5">
           <button class="btn btn-outline-success btn-lg">Read More</button>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <h5 class="text-danger">About Us</h5>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+            <div class="mt-5">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, similique quo tempora temporibus nesciunt nisi. Dolor quia, error vero quidem sunt in nemo expedita pariatur ad nostrum maiores, non quaerat nam hic delectus. Id debitis modi quae voluptates nulla iusto.</p>
+            </div>
+            <div class="my-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente est doloribus quam voluptatem eveniet aperiam exercitationem omnis, modi in illum.
+            </div>
+            <button class="btn btn-dark btn-large">Read more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rooms">
+      <h2 class="text-center">Rooms &amp; Suites</h2>
+      <p class="w50 my-4 text-center weight-light">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laudantium maiores, dicta sunt sint saepe!
+      </p>
+
+      <div class="container">
+        <div class="cells row">
+          <div class="cell col-md-4">
+            <div class="cell-top">
+              <div class="image"></div>
+            </div>
+            <div class="cell-content">
+              <h4 class="room-name">
+                Suite
+              </h4>
+              <p class="room-price">
+                £179
+              </p>
+              <ul class="room-info">
+                <li>
+                  Vestibulum congue mi nec
+                </li>
+                <li>
+                  Aenean ac eros nec lorem
+                </li>
+                <li>
+                  Quisque in libero vitae sem convallis
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="cell col-md-4">
+            <div class="cell-top">
+              <div class="image"></div>
+            </div>
+            <div class="cell-content">
+              <h4 class="room-name">
+                Business
+              </h4>
+              <p class="room-price">
+                £149
+              </p>
+              <ul class="room-info">
+                <li>
+                  Curabitur mollis quam ac dapibus
+                </li>
+                <li>
+                  Fusce et est nec dui fermentum
+                </li>
+                <li>
+                  Duis vel tellus convallis eros
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="cell col-md-4">
+            <div class="cell-top">
+              <div class="image"></div>
+            </div>
+            <h4 class="room-name text-center">
+              Family
+            </h4>
+            <p class="room-price">
+              £129
+            </p>
+            <ul class="room-info">
+              <li>
+                Nulla et volutpat dolor
+              </li>
+              <li>
+                Aliquam aliquet interdum
+              </li>
+              <li>
+                Praesent finibus sem diam
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 

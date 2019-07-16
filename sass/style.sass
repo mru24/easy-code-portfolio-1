@@ -1,9 +1,58 @@
+// GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text|Montserrat:300,400,700&display=swap')
+
+
+
+
+// MIXINS
+@mixin transition
+  transition: all .4s ease-in-out
+@mixin text-shadow-DK
+  text-shadow: 5px 5px 7px #333
 
 $navHeight: 60px
 
-.bg-black
-  background: black
 
+h1,h2,h3,h4,h5,h6
+  font-family: 'DM Serif Text', serif
+
+
+a,a:visited,a:active
+  color: inherit
+  text-decoration: none
+  @include transition
+
+
+.bg-black
+  background: #181818
+
+.arrow-down
+  position: absolute
+  bottom: 10px
+  left: 50%
+  transform: translateY(-50%)
+  outline: none
+  border-top: 28px solid white
+  border-left: 32px solid transparent
+  border-right: 32px solid transparent
+
+.btn
+  text-transform: uppercase
+  font-weight: 700
+  padding: 15px 25px
+  border-radius: 2px
+
+.w50
+  width: 50%
+  margin: auto
+
+.weight-light
+  font-weight: 300
+  color: #666
+
+section
+  margin: 40px 0
+  padding: 40px 0
 
 *
   margin: 0
@@ -12,6 +61,7 @@ $navHeight: 60px
 
 body
   background: black
+  font-family: 'Montserrat', sans-serif
   .wrapper
     background: white
     max-width: 1900px
@@ -22,6 +72,8 @@ body
       nav
         position: relative
         z-index: 999
+        a:focus
+          outline: 1px solid #eee
       .landing-banner
         margin-top: -$navHeight
         background: grey
@@ -39,4 +91,29 @@ body
           position: absolute
           top: 50%
           left: 15%
+          width: 350px
           transform: translateY(-50%)
+          @include text-shadow-DK
+
+
+// SECTION ROOMS
+#rooms
+  background: #f8f9fa
+  .cells
+    .cell
+    .cell:nth-child(1)
+      .cell-top
+        width: 100%
+        height: 20vw
+        background: rgba(240, 84, 106, 0.28)
+        padding: 10px
+        .image
+          width: 100%
+          height: 100%
+          background-image: url('../img/room1.jpg')
+          background-size: cover
+          background-position: center
+          background-repeat: no-repeat
+      .cell-content
+        padding: 15px
+        margin-top: 20px
